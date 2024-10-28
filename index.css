@@ -181,3 +181,8 @@ input {
     border-radius: .5em;
     border: 1px solid gray;
 }
+
+.things {
+    display: grid;
+    gap: .5em;
+}
