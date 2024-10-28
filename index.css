@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Smythe', sans-serif;
+}
+
+/* Typographi */
+
+h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+/* container */
+
+.header {
+    color: white;
+    position: relative;
+}
+
+.container {
+    width: 412px;
+}
+
+.hero {
+    width: 100%;
+}
+
+.jim {
+    position: absolute;
+    left: 2em;
+    top: 1em;
+    letter-spacing: .1em;
+}
+
+.main {
+    padding: 1em 2em;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 1em 0; 
+}
+
+.item > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.item > div > img {
+    width: 40px;
+    height: 40px;
+}
+
+.add-button {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none
+}
+
+.summary {
+    display: grid;
+    place-items: center;
+    padding: 2em 0;
+}
+
+.orders {
+    width: 100%;
+    gap: 1em;
+    border-bottom: 1px solid black;
+    padding: 1em 0;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.details > p {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.remove {
+    cursor: pointer;
+    font-size: .8em;
+    color: gray;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.total {
+    padding: 1em 0;
+}
+
+.total > p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    color: white;
+    border: none;
+    background: green;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 370px;
+    height: 420px;
+    background: white;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-family: sans-serif;
+    border: none;
+    box-shadow: 1px 1px 50px gray;
+}
+
+.modal-inner {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1em;
+    display: grid;
+    place-items: center;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+    width: 100%;
+    padding: 1em 0 0 0;
+}
+
+input {
+    padding: 1em;
+    border-radius: .5em;
+    border: 1px solid gray;
+}

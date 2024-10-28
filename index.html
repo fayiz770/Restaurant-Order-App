@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>FMW Restaurant</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img class="hero" src="assets/images/bg img.png" alt="bg-image">
+            <div class="jim">
+                <h1>Jimmy's Diner</h1>
+                <h2>The burgers and pizzas in town</h2>
+            </div>
+        </header>
+        <main class="main">
+            <div class="item">
+                <div>
+                    <img src="assets/images/pizza.png" alt="pizza">
+                    <div>
+                        <h3>Pizza</h3>
+                        <p>peperonni, mushroom, mozarella</p>
+                        <span>$14</span>
+                    </div>
+                </div>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="assets/images/hamburger.png" alt="hamburger">
+                    <div>
+                        <h3>Hamburger</h3>
+                        <p>beef, cheese, lettuce</p>
+                        <span>$12</span>
+                    </div>
+                </div>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="assets/images/beer.png" alt="beer">
+                    <div>
+                        <h3>Beer</h3>
+                        <p>grain, hops, yeast, water</p>
+                        <span>$12</span>
+                    </div>
+                </div>
+                <button class="add-button">+</button>
+            </div>
+            <div class="summary">
+                <h1>Your Order</h1>
+                <div class="orders">
+                    <div class="order">
+                        <div class="details">
+                            <p>Pizza</p>
+                            <span class="remove">remove</span>
+                        </div>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="order">
+                        <div class="details">
+                            <p>Beer</p>
+                            <span class="remove">remove</span>
+                        </div>
+                        <span class="price">$12</span>
+                    </div>
+                </div>
+                <div class="total order">
+                    <p>Total price:</p>
+                    <span class="price">$26</span>
+                </div>
+                <button class="button">Complete order</button>
+            </div>
+        </main>
+        <div class="modal">
+            <div class="modal-inner">
+                <p>Enter card details</p>
+                <form action="#">
+                    <input 
+                        type="text" 
+                        id="name" 
+                        class="name" 
+                        placeholder="Enter your name">
+
+                    <input 
+                        type="text" 
+                        id="card" 
+                        class="card" 
+                        placeholder="Enter your card number">
+                        
+                    <input 
+                        type="text" 
+                        id="cvv" 
+                        class="cvv" 
+                        placeholder="Enter CVV">
+                    <button 
+                        class="button"
+                        id="button" >
+                            Pay
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
