@@ -20,30 +20,16 @@
             <div class="items" id="items"></div>
             <div class="summary">
                 <h1>Your Order</h1>
-                <div class="orders">
-                    <div class="order">
-                        <div class="details">
-                            <p>Pizza</p>
-                            <span class="remove">remove</span>
-                        </div>
-                        <span class="price">$14</span>
-                    </div>
-                    <div class="order">
-                        <div class="details">
-                            <p>Beer</p>
-                            <span class="remove">remove</span>
-                        </div>
-                        <span class="price">$12</span>
-                    </div>
+                <div id="orders-container" class="orders-container"></div>
+                <div class="total">
+                    <p>Total Price: </p>
+                    <p id="total-container" class="total-container"></p>
                 </div>
-                <div class="total order">
-                    <p>Total price:</p>
-                    <span class="price">$26</span>
-                </div>
-                <button class="button">Complete order</button>
+                <button class="button" data-button="button">Complete order</button>
             </div>
         </main>
-        <div class="modal">
+        <div class="modal" id="modal">
+            <div class="x" id="close-button" data-close="close">x</div>
             <div class="modal-inner">
                 <p>Enter card details</p>
                 <form action="#">
@@ -66,7 +52,8 @@
                         placeholder="Enter CVV">
                     <button 
                         class="button"
-                        id="button" >
+                        id="button"
+                        data-pay="pay" >
                             Pay
                         </button>
                 </form>

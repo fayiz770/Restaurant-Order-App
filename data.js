@@ -5,6 +5,7 @@ export const products = [
         alt: 'pizza',
         ingredients: ['peperonni', 'mushroom', 'mozarella'],
         price: 14,
+        id: crypto.randomUUID(),
     },
     {
         image: 'hamburger.png',
@@ -12,6 +13,7 @@ export const products = [
         alt: 'hamburger',
         ingredients: ['beef', 'cheese', 'lettuce'],
         price: 12,
+        id: crypto.randomUUID(),
     },
     {
         image: 'beer.png',
@@ -19,6 +21,7 @@ export const products = [
         alt: 'beer',
         ingredients: ['grain', 'hops', 'yeast', 'water'],
         price: 14,
+        id: crypto.randomUUID(),
     },
     
 ]

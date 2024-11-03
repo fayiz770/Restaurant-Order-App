@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #ECFDF5;
+    --text: #065F46;
+}
+
 body {
     font-family: 'Smythe', sans-serif;
 }
@@ -28,6 +33,7 @@ h2 {
 }
 
 .container {
+    margin: 0 auto auto auto;
     width: 412px;
 }
 
@@ -82,9 +88,13 @@ h2 {
 }
 
 .summary {
-    display: grid;
+    display: none;
     place-items: center;
     padding: 2em 0;
+}
+
+.orders-container {
+    width: 100%;
 }
 
 .orders {
@@ -93,6 +103,8 @@ h2 {
     border-bottom: 1px solid black;
     padding: 1em 0;
 }
+
+
 
 .details {
     display: flex;
@@ -120,13 +132,22 @@ h2 {
 }
 
 .total {
+    width: 100%;
     padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .total > p {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+.total > :nth-child(2) {
+    font-weight: lighter;
+}
+
 
 button {
     cursor: pointer;
@@ -152,7 +173,7 @@ button {
     left: 0;
     margin: auto;
     width: 370px;
-    height: 420px;
+    height: 480px;
     background: white;
     border: 1px solid black;
     border-radius: .5em;
@@ -182,7 +203,36 @@ input {
     border: 1px solid gray;
 }
 
+.x {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 auto;
+    cursor: pointer;
+    align-self: right;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.x:hover {
+    color: red;
+}
+
 .things {
     display: grid;
     gap: .5em;
+}
+
+.alert {
+    margin-top: 1em;
+    padding: 2em 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--text);
+    font-weight: bold;
 }
